@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Abreu - Contato</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Igor Abreu</a>
+        <nav>
+            <a href="curriculo.html">Currículo</a>
+            <a href="github.html">GitHub</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Contato</h1>
+            <p>Preencha o formulário abaixo que eu entro em contato com uma proposta.</p>
+
+            <form action="#" method="post">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label>Você é:</label>
+                <div class="opcoes">
+                    <input type="radio" id="fisica" name="pessoa" value="fisica" checked>
+                    <label for="fisica">Pessoa física</label>
+
+                    <input type="radio" id="juridica" name="pessoa" value="juridica">
+                    <label for="juridica">Pessoa jurídica</label>
+                </div>
+
+                <label>Melhor horário para contato:</label>
+                <div class="opcoes">
+                    <input type="checkbox" id="manha" name="horario" value="manha">
+                    <label for="manha">Manhã</label>
+
+                    <input type="checkbox" id="tarde" name="horario" value="tarde">
+                    <label for="tarde">Tarde</label>
+
+                    <input type="checkbox" id="noite" name="horario" value="noite">
+                    <label for="noite">Noite</label>
+                </div>
+
+                <label for="servico">Tipo de serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="estatico-1">Site estático (1 a 2 páginas)</option>
+                    <option value="estatico-2">Site estático (3 a 5 páginas)</option>
+                    <option value="estatico-3">Site estático (mais de 5 páginas)</option>
+                    <option value="dinamico">Site dinâmico</option>
+                    <option value="avancado">Site super avançado</option>
+                </select>
+
+                <label for="prazo">Para quando você precisa do site?</label>
+                <input type="date" id="prazo" name="prazo">
+
+                <label for="descricao">Descreva o que você precisa:</label>
+                <textarea id="descricao" name="descricao" placeholder="Ex: quero um site para minha cafeteria com cardápio e localização"></textarea>
+
+                <div class="opcoes" style="margin-top: 15px;">
+                    <input type="checkbox" id="aceito" name="aceito" required>
+                    <label for="aceito">Aceito ser contatado por telefone ou e-mail</label>
+                </div>
+
+                <button type="submit" class="botao">Enviar</button>
+                <button type="reset" class="botao">Limpar</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Outras formas de contato</h2>
+            <p>E-mail: <a href="mailto:igor.g.s.abreu@gmail.com">igor.g.s.abreu@gmail.com</a></p>
+            <p>GitHub: <a href="github.html">veja meus projetos</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Igor Abreu - Trabalho de Construção de Software para Web - UVV</p>
+    </footer>
+
+</body>
+</html>
